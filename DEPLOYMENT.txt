@@ -1,0 +1,8 @@
+== Deployment condsiderations ==
+
+* Settings are separated into development and production, with common parts in settings/common.py
+* DB-connection and secret key are in PROJECT_ROOT/../local/prod_security.py for prod environment
+* Directories _deploy_ouside, data and static are excluded from the deployment paths in pycharm
+* Other directories can be deployed with pycharm'S upload facility.
+* In addition, _deploy_outside must be build (manage.py collectstatic) and copied manually to the prod system
+* testmgr/export must be writeable for the application

@@ -1,0 +1,16 @@
+/* override default from widget.css
+   Rainer Hörbe, 18-April-2013
+*/
+
+/* widen selector boxes for filter_horizontal */
+.selector {
+    width: 1024px;
+}
+
+.selector-available, .selector-chosen {
+    width: 490px;
+}
+
+#id_operation_from, #id_operation_to {
+    width: inherit;
+}

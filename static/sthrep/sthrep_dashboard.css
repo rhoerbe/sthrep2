@@ -1,0 +1,18 @@
+div#dashboard {
+  width: 50em;
+}
+
+.dashboard-module {
+    margin-top: 30px;
+}
+.dashboard-module-content {
+    font-size: "150%";
+}
+
+div.dashboard-module>div>h3 {
+    display: none;
+}
+/*
+div#module_1>div>h3 {
+    display: none;
+}*/

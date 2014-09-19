@@ -1,0 +1,10 @@
+{% extends "admin/change_form.html" %}
+{# {% extends "contrib/admin/templates/admin/change_form.html" %}  #}{# qualify template to allow to extend it site-wide by a template with same name #}
+{% load admin_modify %}
+{% block submit_buttons_bottom %}
+<div class="submit-row">
+<!--input type="submit" value="Cancel" class="backlink" name="_back" onclick="location.href='{{retURL}}' "/-->
+<p class="backlink"><a href="{{retURL}}">back</a></p>
+{% submit_row %}
+</div>
+{% endblock %}

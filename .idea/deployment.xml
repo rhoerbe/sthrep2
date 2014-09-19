@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_CONTENT" serverName="netcup7.hoerbe.at" createEmptyFolders="true" traceLevel="DETAILS" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;.pyc" notifyRemoteChanges="true" compareModeInSync="TIMESTAMP">
+    <serverData>
+      <paths name="netcup7.hoerbe.at">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/sthrepTestPortalverbundGvAt/sthrep/" local="$PROJECT_DIR$" web="/sthrep/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/data" />
+            <excludedPath path="/srv/httpd/sthrepPortalverbundAt/sthrep/sthrep/settings/prod.py" />
+            <excludedPath local="true" path="$PROJECT_DIR$/_deploy_outside" />
+            <excludedPath local="true" path="$PROJECT_DIR$/static" />
+            <excludedPath local="true" path="$PROJECT_DIR$/log" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

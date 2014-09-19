@@ -1,0 +1,11 @@
+SELECT 'requmgr_featuregroup.sql: load data';
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (0, 'AssrQ', 'Assertion Query');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (1, 'AttrQ', 'Attribute Query');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (2, 'Attr', 'Attributes');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (3, 'ECP', 'ECP');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (4, 'MD', 'Metadata');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (5, 'Multi', 'Multiple');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (6, 'NamId', 'NameID Mapping');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (7, 'Net', 'Network');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (8, 'SLO', 'SLO');
+INSERT INTO requmgr_featuregroup (id, fg_id, name) VALUES (9, 'SSO', 'SSO');

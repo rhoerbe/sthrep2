@@ -1,0 +1,53 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}SAML Test Harness - Workflows{% endblock %}
+
+{% block content %}
+<h1>Workflow</h1> 
+<h2>Execute a Test Plan</h2> 
+<br/> 
+<table>
+<thead style="background-color: #eee">
+ <td width=20 valign=top >#</td>
+ <td width=121 valign=top >Step</td>
+ <td width=320 valign=top >What to do</td>
+ <td width=320 valign=top>How to do</td>
+</thead>
+<tr >
+ <td width=20 valign=top>1</td>
+ <td width=121 valign=top >Test your metadata</td>
+ <td width=320 valign=top >An optional, but recommended step is to validate the test target's metadata using th MD validation service.</td>
+ <td width=320 valign=top><a href="http://md.test.portalverbund.gv.at/validate">Link</a></td>
+</tr>
+<tr >
+ <td width=20 valign=top>4</td>
+ <td width=121 valign=top>Introduce test target to the test federation by including the EntitiyDescriptor into the metadata.</td>
+ <td width=320 valign=top><a href="http://md.test.portalverbund.gv.at/validate">Link</a> (wait 10 minutes for the metadata aggregator to refresh</td>
+ <td width=320 valign=top></td>
+</tr>
+<tr >
+ <td width=20 valign=top>4</td>
+ <td width=121 valign=top>Introduce test driver to the test target.</td>
+ <td width=320 valign=top>The preferred method is to include the test federation's metadata feed in the test target's configuration. For the current set of test cases it is sufficient to import the test driver's EntitiyDescriptor only.</td>
+ <td width=320 valign=top></td>
+</tr>
+<tr >
+ <td width=20 valign=top>1</td>
+ <td width=121 valign=top >Create test plan</td>
+ <td width=320 valign=top >Choose a test plan in the repository manager that is appropriate for the selected test target and duplicate it (action "duplicate .." and "go". OR you may want to add a new test plan.</td>
+ <td width=320 valign=top><a href="/testmgr/testplan/">Link</a></td>
+</tr>
+<tr >
+ <td width=20 valign=top>3</td>
+ <td width=121 valign=top>Create a test configuration </td>
+ <td width=320 valign=top>A test configuration may consist of several "test configuration" records. Elements in records with a higher sequence nmber overwrite previous ones. (Developers may think of class inheritance). At minimum, you need to configure the test target's entity ID and name and extend existing configurations.</td>
+<td width=320 valign=top><a href="/testmgr/testconfig/">Step 1</a>.<br> For step 2 call up the detail page of your test plan and select the test confugration.</td>
+</tr>
+<tr >
+ <td width=20 valign=top>5</td>
+ <td width=121 valign=top>Execute the Test Plan</td>
+ <td width=320 valign=top>Select the action "Run ..". Find Results by drilling down in the details page.</td>
+ <td width=320 valign=top></pre></td>
+</tr>
+</table>
+{% endblock %}

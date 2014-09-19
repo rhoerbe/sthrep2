@@ -1,0 +1,9 @@
+This application includes initial data scripts using SQL to add DDL and data. As south ignores them, the process
+to install der application is:
+- install app, but not south
+- run ./manage.py syncdb --settings=sthrep.settings.devl  # replace devl according to the environment
+- run psql -h localhost -U rhoerbe -d sthrep -f repmgr/sql/TestPlan_Operation_data.sql # syncdb problem: avoid to load testplan_operation before testplan
+- install south
+- run ./manage.py convert_to_south sthrep
+- consider manage.py collectstatic for deplyoment
+- loading the code of testclasses is not implemented yet > testmgr/sql/UpdateTestClassCode.sql

@@ -1,0 +1,18 @@
+.operation_ops {
+  margin: 0.1em; width: auto
+}
+table.operation_ops>td {
+  padding: 0 0 0 0.3em;
+}
+.operation_ops_val, .operation_ops_label {
+  line-height: 0.8em;
+  padding-top: 0;
+}
+table#result_list td {
+  white-space: normal;
+
+}
+/* shrink columns to contents */
+div.results > table#result_list {
+    width: auto;
+}

@@ -1,0 +1,17 @@
+/* override default from widget.css
+   Rainer Hörbe, 12-April-2013
+*/
+
+/* widen selector boxes for filter_horizontal */
+.selector {
+    width: auto;
+}
+
+.selector-available, .selector-chosen {
+    width: 50em;
+}
+
+#id_requirements_from, #id_requirements_to {
+    width: inherit;
+    height: 50em;
+}

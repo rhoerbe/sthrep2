@@ -1,0 +1,7 @@
+/* override defaults
+   Rainer Hörbe, 7-June-2013
+*/
+
+div.results > table#result_list {
+    width: auto;
+}

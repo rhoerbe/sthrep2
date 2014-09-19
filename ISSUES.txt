@@ -1,0 +1,27 @@
+# This is a collection of TODOs.
+
+# TODO: remove reversion to all tables
+
+#TODO: data import issues:
+# psql -h localhost -U rhoerbe -d sthrep -f testmgr/sql/TestCase_TestClass.sql
+psql:testmgr/sql/TestCase_TestClass.sql:102: ERROR:  insert or update on table "testmgr_testcase" violates foreign key constraint "testmgr_testcase_requirement_id_fkey"
+DETAIL:  Key (requirement_id)=(21) is not present in table "requmgr_requirement".
+
+# TODO check deployment path for wsgi.py  (prod.py vs. PROTECT_ROOT/../wsgi)
+
+# === UI improvements ===
+# TODO remove form button "Save and add another"
+# TODO activating "cancel/go back" after "save and continue editing" goes to previous modify screen
+# TODO remember previous selection in admin change list (use case: modify multiple records in a table)
+# TODO Filter Horizontal: superfluous help text "Hold down "Control", or "Command" on a Mac, to select more than one."
+# TODO Navigation between list an detail form: backlink only per model (change_form.html) -> refactor into site-wide template
+# TODO backlink only per model (change_form.html): layout improvement
+
+
+# TODO OperationAdmin Performance: prefetch_related does not work in show_operation() .. need to stick to original qs
+
+# TODO: logging und error handling (error messages in run_test action frequently not displayed)
+
+# TODO: Improve list_filter on Operations (add status, set available as default selection)
+
+# Timezone für testrun fehlt

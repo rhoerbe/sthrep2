@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodeMirror: Active Line Demo</title>
+    <link rel="stylesheet" href="/static/codemirror/lib/codemirror.css">
+    <script src="/static/codemirror/lib/codemirror.js"></script>
+    <script src="/static/codemirror/mode/python/python.js"></script>
+    <script src="/static/codemirror/addon/selection/active-line.js"></script>
+
+    <style type="text/css">
+      .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+      .CodeMirror-activeline-background {background: #e8f2ff !important;}
+    </style>
+  </head>
+  <body>
+    <h1>CodeMirror: Active Line Demo</h1>
+
+    <form>
+<textarea id="code" name="code">
+def repair_fmt(s):
+    if s[0:1] == '_':
+        s = s[1:]     # remove unexpectedly inserted underscore from excel export
+    return s.replace("'","''")  # escape single quotes in SQL-style</textarea></form>
+
+    <script>
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+  mode: "python",
+  styleActiveLine: true,
+  lineNumbers: true,
+  lineWrapping: true
+});
+</script>
+
+    <p>Styling the current cursor line.</p>
+
+  </body>
+</html>
